@@ -9,7 +9,7 @@ def get_title_data(sessionTicket):
                 "Content-Type": "application/json",
                 "X-Authorization": sessionTicket
             },
-            json={}s
+            json={}
         )
         if r.status_code == 200:
             return r.json()
